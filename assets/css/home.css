@@ -1,0 +1,195 @@
+/* =====================================================
+   MORSE STUDIO - HOME PAGE
+   ===================================================== */
+
+main{
+    padding-bottom:20px;
+}
+
+.hero{
+    position:relative;
+}
+
+.hero::before,
+.hero::after{
+    content:"";
+    position:absolute;
+    width:70px;
+    height:8px;
+    background:#8b5e3c;
+    top:38px;
+    border-radius:6px;
+}
+
+.hero::before{
+    left:14%;
+    width:90px;
+}
+
+.hero::after{
+    right:14%;
+    width:90px;
+}
+
+.translator-panel{
+    position:relative;
+}
+
+.translator-panel::before{
+    content:attr(data-title);
+    position:absolute;
+    top:-15px;
+    left:24px;
+    background:#8a603d;
+    color:#fff8ef;
+    padding:6px 18px;
+    border-radius:10px;
+    font-size:.9rem;
+    letter-spacing:1px;
+}
+
+.translator-panel{data-title:"TRANSLATOR";}
+
+.ai-note{
+    color:#6d543f;
+    margin-bottom:16px;
+    line-height:1.5;
+}
+
+#chat-window{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.message{
+    max-width:78%;
+    padding:12px 14px;
+    border-radius:12px;
+    line-height:1.45;
+    font-size:.95rem;
+}
+
+.message.user{
+    align-self:flex-end;
+    background:#dfe4ef;
+}
+
+.message.bot{
+    align-self:flex-start;
+    background:#fbf6ef;
+    border:1px solid #d8c0a1;
+}
+
+#translate-btn{
+    background:#8b6540;
+    color:white;
+}
+
+#translate-btn:hover{
+    background:#755133;
+}
+
+#copy-btn,
+#download-btn,
+#clear-btn{
+    background:#f3e4d1;
+}
+
+.feature-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.feature-card{
+    text-align:left;
+    display:flex;
+    gap:18px;
+    align-items:center;
+    min-height:140px;
+}
+
+.feature-icon{
+    width:70px;
+    height:70px;
+    margin:0;
+    flex-shrink:0;
+}
+
+.feature-card:nth-child(1){
+    border-color:#9aaa6c;
+}
+
+.feature-card:nth-child(1) .feature-icon{
+    background:#edf3dc;
+}
+
+.feature-card:nth-child(2){
+    border-color:#88a1d1;
+}
+
+.feature-card:nth-child(2) .feature-icon{
+    background:#e8eefb;
+}
+
+.feature-card:nth-child(3){
+    border-color:#d49b57;
+}
+
+.feature-card:nth-child(3) .feature-icon{
+    background:#fff0db;
+}
+
+.about-preview{
+    margin-top:10px;
+}
+
+.about-button{
+    background:#8b6540;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:12px;
+    transition:.25s;
+}
+
+.about-button:hover{
+    background:#755133;
+}
+
+footer{
+    font-size:.95rem;
+    justify-content:center;
+}
+
+.footer-left{
+    text-align:center;
+}
+
+.footer-right{
+    display:none;
+}
+
+@media(max-width:1200px){
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero::before,
+    .hero::after{
+        display:none;
+    }
+
+}
