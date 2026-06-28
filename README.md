@@ -157,7 +157,3 @@ Morse Studio aims to become a complete learning and experimentation platform for
 The goal is to make learning Morse Code interactive, enjoyable, and accessible through exploration, practice, audio, and modern web technologies.
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
