@@ -150,54 +150,61 @@
 
 
                 <!-- ======================================
-                     AI LABS
-                ======================================= -->
+                AI LABS
+======================================= -->
 
-                <aside class="ai-panel" data-title="AI LABS">
+<aside class="ai-panel" data-title="AI LABS">
 
-                    <div class="panel-title">
+    <div class="panel-title">
 
-                        <i data-lucide="bot"></i>
+        <i data-lucide="bot"></i>
 
-                        <h2>AI Labs</h2>
+        <h2>AI Labs</h2>
 
-                    </div>
+    </div>
 
-                    <p class="ai-note">
+    <p class="ai-note">
 
-                        Ask anything about Morse Code.
+        Your personal Morse Code assistant powered by Gemini.
+        Session history remains available until the browser is closed.
 
-                        Generate practice.
+    </p>
 
-                        Learn concepts.
+    <div id="chat-box" class="chat-box">
 
-                        Session history stays until the browser is closed.
+        <div class="bot-message">
 
-                    </p>
+            👋 Hello! I'm your Morse Studio assistant.
 
-                    <div id="chat-window">
+            Ask me anything about Morse Code, telegraphy,
+            history, timing rules or learning techniques.
 
-                    </div>
+        </div>
 
-                    <div class="chat-input">
+    </div>
 
-                        <textarea
-                            id="user-message"
-                            placeholder="Ask Gemini something..."></textarea>
+    <div class="chat-input">
 
-                        <button id="send-btn">
+        <textarea
+            id="ai-input"
+            rows="2"
+            placeholder="Ask about Morse Code..."></textarea>
 
-                            <i data-lucide="send"></i>
+        <button
+            id="send-btn"
+            type="button">
 
-                            Send
+            <i data-lucide="send"></i>
 
-                        </button>
+            <span>Send</span>
 
-                    </div>
+        </button>
 
-                </aside>
+    </div>
 
-            </section>
+</aside>
+
+</section>
                         <!-- =========================
                  FEATURE MODULES
             ========================== -->
